@@ -30,7 +30,7 @@ export default class ExampleComponent extends React.Component<Props> {
                     <p className="panel-heading">Some Example Items</p>
                     {this.props.itemList.map((item) => (
                         <p className="panel-block" key={item.id}>
-                            <i className="fas fa-database" style={padRight}></i>
+                            <i className="fas fa-database" style={this.padRight}></i>
                             <span>{item.data}</span>
                         </p>
                     ))}
@@ -38,8 +38,8 @@ export default class ExampleComponent extends React.Component<Props> {
                         <>
                             <p className="panel-block">
                                 <div>
-                                    <i className="fas fa-2x fa-clock" style={padRight}></i> Just a sec. We're loading
-                                    your items...
+                                    <i className="fas fa-2x fa-clock" style={this.padRight}></i> Just a sec. We're
+                                    loading your items...
                                 </div>
                             </p>
                             <p className="panel-block">
