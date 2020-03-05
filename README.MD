@@ -11,5 +11,5 @@ It is an opinionated configuration for creating Flex plugins using the following
 ## Usage
 
 ```sh
-npm init flex-plugin <plugin-name> --template https://github.com/ZingDevLimited/zing-flex-plugin-template/tree/1.0.0
+npm init flex-plugin <plugin-name> --template https://github.com/ZingDevLimited/zing-flex-plugin-template/tree/1.0.1
 ```
