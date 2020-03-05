@@ -32,7 +32,7 @@ PORT=3000 npm start
 When you make changes to your code, the browser window will be automatically refreshed.
 
 > Note: I've encountered some webpack issues as of 05/03/2020 where craco and create-react scripts have different required versions of webpack.  
-> To resolve this, you can set `SKIP_PREFLIGHT_CHECK` to `true` in `.env`
+> The suggested resolutions didn't work, so the workaround was to set `SKIP_PREFLIGHT_CHECK` to `true` in `.env.development`
 
 ## Deploy
 
