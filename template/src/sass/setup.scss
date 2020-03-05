@@ -1,0 +1,12 @@
+// import base variables for application
+@import "./variables.scss";
+
+// perform bulma overrides here if needed
+
+// import Bulma
+@import "bulma/bulma.sass";
+
+// import fontawesome
+$fa-font-path: "../webfonts";
+@import "@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "@fortawesome/fontawesome-free/scss/solid.scss";
