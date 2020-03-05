@@ -6,6 +6,10 @@
 // import Bulma
 @import "bulma/bulma.sass";
 
+html {
+    overflow-y: auto;
+}
+
 // import fontawesome
 $fa-font-path: "../webfonts";
 @import "@fortawesome/fontawesome-free/scss/fontawesome.scss";
