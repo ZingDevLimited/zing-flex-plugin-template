@@ -38,12 +38,22 @@ When you make changes to your code, the browser window will be automatically ref
 
 Once you are happy with your plugin, you have to bundle it in order to deploy it to Twilio Flex.
 
+If this is the first time you are deploying your plugin, or you have made changed to your CSS, you will need to upload any custom CSS which is bundled from your plugin to Twilio assets.
+
 Run the following command to start the bundling:
 
 ```bash
 npm run build
 ```
 
-Afterwards, you'll find in your project a `build/` folder that contains a file with the name of your plugin project. For example, `plugin-example.js`. Take this file and upload it into the Assets part of your Twilio Runtime.
+In `build/static/css` you should find your compiled CSS files.  
+Take the `*.css` file (no need for the `.css.map`), rename it to something simpler, and upload it as an asset via the Twilio console.  
+Once complete, this upload will have a fixed URL. Modify `src/Plugin.tsx` to include a call to `loadCss("<YOUR ASSET URL>")` inside of `init`.
 
-Note: Common packages like `React`, `ReactDOM`, `Redux` and `ReactRedux` are not bundled with the build because they are treated as external dependencies so the plugin will depend on Flex to provide them globally.
+You can now deploy the plugin with the following command:
+
+```bash
+npm run deploy
+```
+
+When prompted, enter your `Account SID` and `Auth Token` for the Twilio project you want to deploy to.
