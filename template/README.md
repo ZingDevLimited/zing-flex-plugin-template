@@ -48,7 +48,8 @@ npm run build
 
 In `build/static/css` you should find your compiled CSS files.  
 Take the `*.css` file (no need for the `.css.map`), rename it to something simpler, and upload it as an asset via the Twilio console.  
-Once complete, this upload will have a fixed URL. Modify `src/Plugin.tsx` to include a call to `loadCss("<YOUR ASSET URL>")` inside of `init`.
+Once complete, this upload will have a fixed URL. Modify `src/Plugin.tsx` to include a call to `loadCss("<YOUR ASSET URL>")` inside of `init`.  
+For a production instance, we advise using a runtime variable to store the Twilio Runtime Domain at the start of the asset url.
 
 You can now deploy the plugin with the following command:
 
